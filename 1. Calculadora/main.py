@@ -8,6 +8,95 @@ def sair():
   print("Até a próxima")
   exit()
 
+def adição():
+  Num1 = float(input('Digite um número: '))
+  Num2 = float(input('Digite outro número: '))
+  resultado = Num1+Num2
+  print(barra)
+  if resultado == int(resultado):
+    print('O resultado da soma é: ',int(resultado))
+  else:
+    print('O resultado da soma é: ',resultado)
+
+def subtração():
+  Num1 = float(input('Digite um número: '))
+  Num2 = float(input('Digite outro número: '))
+  resultado = Num1-Num2
+  print(barra)
+  if resultado == int(resultado):
+    print('O resultado da subtração é: ',int(resultado))
+  else:
+    print('O resultado da subtração é: ',resultado)
+
+def divisão():
+  dividendo = float(input('Digite o dividendo: '))
+  divisor = float(input('Digite o divisor: '))
+  resultado = dividendo/divisor
+  print(barra)
+  if dividendo == 0:
+    print('Dividendo não pode ser 0')
+  elif divisor == 0:
+    print('Divisor não pode ser 0')
+  else:
+    print(barra)
+    if resultado == int(resultado):
+      print('O resultado da divisão é: ',int(resultado))
+    else:
+      print('O resultado da divisão é: ',resultado)
+
+def multiplicação():
+  Num1 = float(input('Digite um número: '))
+  Num2 = float(input('Digite outro número: '))
+  resultado = Num1*Num2
+  print(barra)
+  if resultado == int(resultado):
+    print('O resultado da multiplicação é: ',int(resultado))
+  else:
+    print('O resultado da multiplicação é: ',resultado)
+
+def módulo_divisão():
+  dividendo = float(input('Digite o dividendo: '))
+  divisor = float(input('Digite o divisor: '))
+  resultado = dividendo%divisor
+  print(barra)
+  if dividendo == 0:
+    print('Dividendo não pode ser 0')
+  elif divisor == 0:
+    print('Divisor não pode ser 0')
+  else:
+    print(barra)
+    if resultado == int(resultado):
+      print('O módulo da divisão é: ', int(resultado))
+    else:
+      print('O módulo da divisão é: ', resultado)
+
+def divisão_inteira():
+  dividendo = float(input('Digite o dividendo: '))
+  divisor = float(input('Digite o divisor: '))
+  resultado = dividendo//divisor
+  print(barra)
+  if dividendo == 0:
+    print('Dividendo não pode ser 0')
+  elif divisor == 0:
+    print('Divisor não pode ser 0')
+  else:
+    print(barra)
+    if resultado == int(resultado):
+      print('O módulo da divisão é: ', int(resultado))
+    else:
+      print('O módulo da divisão é: ', resultado)
+
+def exponenciação():
+  Num1 = float(input('Digite um número: '))
+  Num2 = float(input('Digite o potencializador: '))
+  resultado = Num1**Num2
+  print(barra)
+  if resultado == int(resultado):
+    print('O resultado da exponenciação é: ',int(resultado))
+  else:
+    print("O resultado da exponenciação é: ",resultado)
+
+
 while True:
   limpar_console()
   print(barra)
@@ -17,98 +106,31 @@ while True:
 
   #Operação de adição
   if Operação == 1:
-    Num1 = float(input('Digite um número: '))
-    Num2 = float(input('Digite outro número: '))
-    resultado = Num1+Num2
-    print(barra)
-    if resultado == int(resultado):
-      print('O resultado da soma é: ',int(resultado))
-    else:
-      print('O resultado da soma é: ',resultado)
+    adição()
 
   #Operação de subtração
   elif Operação == 2:
-    Num1 = float(input('Digite um número: '))
-    Num2 = float(input('Digite outro número: '))
-    resultado = Num1-Num2
-    print(barra)
-    if resultado == int(resultado):
-      print('O resultado da subtração é: ',int(resultado))
-    else:
-      print('O resultado da subtração é: ',resultado)
+    subtração()
 
   #Operação de divisão
   elif Operação == 3:
-    dividendo = float(input('Digite o dividendo: '))
-    divisor = float(input('Digite o divisor: '))
-    resultado = dividendo/divisor
-    print(barra)
-    if dividendo == 0:
-      print('Dividendo não pode ser 0')
-    elif divisor == 0:
-      print('Divisor não pode ser 0')
-    else:
-      print(barra)
-      if resultado == int(resultado):
-        print('O resultado da divisão é: ',int(resultado))
-      else:
-        print('O resultado da divisão é: ',resultado)
+    divisão()
 
   #Operação de multiplicação
   elif Operação == 4:
-    Num1 = float(input('Digite um número: '))
-    Num2 = float(input('Digite outro número: '))
-    resultado = Num1*Num2
-    print(barra)
-    if resultado == int(resultado):
-      print('O resultado da multiplicação é: ',int(resultado))
-    else:
-      print('O resultado da multiplicação é: ',resultado)
+    multiplicação()
 
   #Operação de módulo de divisão
   elif Operação == 5:
-    dividendo = float(input('Digite o dividendo: '))
-    divisor = float(input('Digite o divisor: '))
-    resultado = dividendo%divisor
-    print(barra)
-    if dividendo == 0:
-      print('Dividendo não pode ser 0')
-    elif divisor == 0:
-      print('Divisor não pode ser 0')
-    else:
-      print(barra)
-      if resultado == int(resultado):
-        print('O módulo da divisão é: ', int(resultado))
-      else:
-        print('O módulo da divisão é: ', resultado)
-
+    módulo_divisão()
+    
   #Operação de divisão inteira
   elif Operação == 6:
-    dividendo = float(input('Digite o dividendo: '))
-    divisor = float(input('Digite o divisor: '))
-    resultado = dividendo//divisor
-    print(barra)
-    if dividendo == 0:
-      print('Dividendo não pode ser 0')
-    elif divisor == 0:
-      print('Divisor não pode ser 0')
-    else:
-      print(barra)
-      if resultado == int(resultado):
-        print('O módulo da divisão é: ', int(resultado))
-      else:
-        print('O módulo da divisão é: ', resultado)
+    divisão_inteira()
 
   #Operação de exponenciação
   elif Operação == 7:
-    Num1 = float(input('Digite um número: '))
-    Num2 = float(input('Digite o potencializador: '))
-    resultado = Num1**Num2
-    print(barra)
-    if resultado == int(resultado):
-      print('O resultado da exponenciação é: ',int(resultado))
-    else:
-      print("O resultado da exponenciação é: ",resultado)
+    exponenciação()
 
   elif Operação == 8:
     sair()
@@ -125,4 +147,3 @@ while True:
       sair()
   else:
     limpar_console()
-    print('Resultado da operação anterior: \n ',resultado)
